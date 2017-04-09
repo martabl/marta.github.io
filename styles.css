@@ -1,0 +1,28 @@
+body{
+    background-image: url("../images/fondo1.jpg");
+    font-size: 30px;
+    color:#d0b447;
+    font-weight: bold;
+    font-family: "Indie Flower";
+
+
+}
+    #foto {
+      display:block;
+      margin-left: :auto;
+      margin-right: auto;
+      margin: auto;
+  }
+
+
+  h2{
+    text-align: center;
+    color:#e0d6d2;
+  }
+  h1{
+    text-align: center;
+    color:#d0b447;
+  }
+  p{
+    text-align: justify;
+  }
