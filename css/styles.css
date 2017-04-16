@@ -1,20 +1,30 @@
+* {
+  box-sizing: border-box;
+}
 body{
     background-image: url("../images/fondo2.webp");
     font-size: 30px;
-    color:#b5b5bd;
+    color:#00bcd4;
     font-weight: bold;
-    font-family: "Indie Flower", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 h1{
   text-align: center;
-  color:#b5b5bd;
+  color:#0ea9bd;
+  padding: 40px;
 }
 a {
   text-decoration: none;
-  color:#b5b5bd;
+  color:#77e4d7;
 }
 .lista1 {
+  padding: 20px;
+  color:#77e4d7;
   list-style-type: square;
+  position: fixed;
+  right: 0px;
+  top: 100px;
+
 }
 .contenedor-center{
   width: 600px;
@@ -22,30 +32,34 @@ a {
   clear:both;
 }
 .columnaizquierda {
-  width: 300px;
-  margin-left: auto;
+  width: 40%;
+  margin-left: 10px;
   float:left;
 }
 .columnaderecha {
-  color:#5b6a88;
-  margin-left: 40px;
-  width:auto;
+  color: #77e4d7;
+  margin-left: 500px;
+  padding-top: 50px;
+
+  width:400px;
 }
 .foto1 {
-  border:1px solid #5b6a88;
+  border:1px solid #77e4d7
 }
-p{
+#aboutme {
+  clear: left;
+}
+.texto {
     text-align: justify;
+    width: 85%;
   }
-
-  .adalablogo {
-    margin-left: 65%;
-  }
-  .telefonicalogo {
-    margin-left: auto;
-  }
-  .lista2 {
+.logos {
+  position: relative;
+  margin-left: 67%;
+}
+.lista2 {
     text-align: center;
+    margin-bottom: 0px;
   }
   .iconos {
     display: inline;
