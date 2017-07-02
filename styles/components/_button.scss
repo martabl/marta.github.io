@@ -1,0 +1,58 @@
+.navButton {
+  width: 45px;
+  height: 40px;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
+}
+
+.navButton span {
+  display: block;
+  position: absolute;
+  height: 16.5%;
+  width: 100%;
+  background: $color-burguer-title;
+  border-radius: 16.5%;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.navButton span:nth-child(1) {
+  top: 0;
+}
+
+.navButton span:nth-child(2) {
+  top: $size-line-burguer;
+}
+
+.navButton span:nth-child(3) {
+  bottom: 0;
+}
+
+.navButton.open span:nth-child(1) {
+  top: 14px;
+  transform: rotate(90deg);
+  left: -$size-line-burguer;
+}
+
+.navButton.open span:nth-child(2) {
+top: 14px;
+  transform: rotate(90deg);
+}
+
+.navButton.open span:nth-child(3) {
+  top: 14px;
+  transform: rotate(90deg);
+  left: $size-line-burguer;
+}
+
+@media(min-width: $min-size-mobile) {
+  .navButton {
+    display: none;
+  }
+}

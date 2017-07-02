@@ -1,0 +1,75 @@
+.indicated {
+  box-shadow: 0px 10px 35px 10px rgba(255,255,255,0.52);
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.nonIndicated {
+  z-index: 0;
+  transition: all 0.3s ease;
+}
+
+.photo ,.about-me, .skills, .thanks, .contact{
+  position: relative;
+  background-color: $tertiary-color;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.photo{
+  background-color: $primary-color;
+  margin-top: 88px;
+}
+.my-photo{
+  width: 100%;
+}
+.blank {
+  position: relative;
+  height: 0;
+  bottom: 45px;
+}
+
+
+@media (min-width: $min-size-mobile){
+.about-me, .thanks, .skills, .contact{
+  position: absolute;
+  padding: 20px;
+}
+
+.about-me, .thanks{
+    background-color: $secondary-color;
+  }
+.skills, .contact{
+    background-color: $tertiary-color;
+  }
+.photo{
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 45%;
+  z-index: 50;
+  margin-top: 0;
+}
+.about-me{
+  top: 350px;
+  right: 0;
+  width: 60%;
+  z-index: 60;
+}
+.skills{
+  top: 600px;
+  left: 0;
+}
+.thanks{
+  top: 800px;
+  right: 0;
+  width: 60%;
+  z-index: 80;
+}
+.contact{
+  top: 1000px;
+  left: 0;
+  width: 50%;
+}
+}

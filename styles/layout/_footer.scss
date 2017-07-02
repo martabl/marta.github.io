@@ -1,0 +1,22 @@
+
+.container-footer{
+  width: 100%;
+  display: flex;
+  padding: 15px;
+}
+.container-icons{
+  width: 100%;
+  text-align: center;
+}
+.icons{
+  width: 50px;
+  padding-right: 5px;
+}
+
+
+@media (min-width: $min-size-mobile){
+   .container-footer{
+    position: absolute;
+    top: 1270px;
+  }
+}

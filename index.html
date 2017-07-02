@@ -1,84 +1,99 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8" />
-    <link href=' https://fonts.google.com/specimen/Roboto' rel='stylesheet' type='text/css'/>
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Marta Bermejo</title>
-  </head>
-  <body>
-    <h1> MARTA BERMEJO LORENZO</h1>
-    <ul class= "lista1">
-      <li><a href="#aboutme">about me</a></li>
-      <li><a href="#cursos">cursos</a></li>
-    </ul>
-    <div class="contenedor-center">
-      <div class= "columnaizquierda"> <img class="foto1" src="images/foto1.jpg" alt="caminando por Madrid"width="300"></div>
-      <div class="columnaderecha"><h3>todo lo que surge nace con nuestros pensamientos...</h3></div>
+<head>
+  <meta charset="utf-8" />
+  <<link href="https://fonts.googleapis.com/css?family=Bellefair" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css"/>
+  <meta name="viewport" content="width = device-width">
+  <title>Marta Bermejo</title>
+</head>
+<body>
+  <header class="nav-content">
+
+    <div class="nav" id="nav">
+      <div class="head-line-container-desktop">
+        <h1>MARTA BERMEJO LORENZO <br>FrontEnd developer</h1>
+      </div>
+      <ul class="nav-desktop">
+        <li class="nav-small-item"><a class="link-nav" href="#about">Sobre mí</a></li>
+        <li class="nav-small-item"><a class="link-nav" href="#skill">Habilidades</a></li>
+        <li class="nav-small-item"><a class="link-nav" href="#thank">Agradecimientos</a></li>
+        <li class="nav-small-item"><a class="link-nav" href="#contacts">Contacto</a></li>
+      </ul>
+      <ul class="nav-mobile" id="js-navShow">
+        <li class="nav-small-item"><a class="link-nav" href="#about">Sobre mí</a></li>
+        <li class="nav-small-item"><a class="link-nav" href="#skill">Habilidades</a></li>
+        <li class="nav-small-item"><a class="link-nav" href="#thank">Agradecimientos</a></li>
+        <li class="nav-small-item"><a class="link-nav" href="#contacts">Contacto</a></li>
+      </ul>
     </div>
 
-    <h2 id="aboutme">about me</h2>
-      <p class="texto 1">Nunca sabes hasta dónde puedes llegar, cuál es el mejor camino... pero el que no arriesga no gana.</p>
-      <p class="texto 2">Soy ingeniera en obras públicas principalmente por lo bonito que es crear y me he reconvertido en desarrolladora front end.</p>
-
-      <h2 id="cursos">cursos</h2>
-      <table>
-        <thead>
-        <tr>
-          <th>fecha</th>
-          <th>curso</th>
-        </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>2012</td>
-            <td>Gestión económico-financiera</td>
-          </tr>
-          <tr>
-            <td>2012</td>
-            <td>Habilidades comerciales y de comunicación</td>
-          </tr>
-          <tr>
-            <td>2012</td>
-            <td>especialista en sondeos</td>
-          </tr>
-          <tr>
-            <td>2013</td>
-            <td>Project y Presto</td>
-          </tr>
-          <tr>
-            <td>2013</td>
-            <td>Energías renovables</td>
-          </tr>
-        </tbody>
-      </table>
-<div class="logos">
-      <img class="adalablogo" src="http://eresimpulso.fontvella.es/public/images/projects/550/main_image.png" alt="adalab, creando diversidad digital" width="250">
-      <img class="telefonicalogo" src="https://pbs.twimg.com/profile_images/644791743213379584/dueEBzBS.jpg" alt="logo fundación telefónica" width="150">
-</div>
-
-<div class="lista2">
-      <ul>
-        <li class="iconos">
-            <a target="_blank" href="https://www.facebook.com/marta.bermejolorenzo">
-            <img src="images/Facebook.png" alt="icono facebook" width="60">
-            </a>
-        </li>
-        <li class="iconos">
-           <a target="_blank" href="https://www.instagram.com/?hl=es">
-           <img src="images/Instagram.png" alt="icono instagram" width="60">
-           </a>
-        </li>
-        <li class="iconos">
-          <a target="_blank" href="https://es.linkedin.com/https://twitter.com/">
-          <img src="images/linkedin.png" alt="icono linkedin" width="60"></li>
-          </a>
-        <li class="iconos">
-          <a target="_blank" href="https://twitter.com/mberlo2">
-          <img src="images/Twitter.png" alt="icono twitter" width="60"></li>
-          </a>
-      </ul>
+    <div class="nav-mobile-container">
+      <div id="js-navMobile" class="navButton">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-  </body>
-</html>
+      <div class="head-line-container-mobile">
+        <h1>MARTA BERMEJO LORENZO <br>FrontEnd developer</h1>
+      </div>
+    </div>
+
+  </header>
+
+  <div class="photo">
+    <img class="my-photo"src="images/foto1.jpg" alt="">
+  </div>
+  <div id="about" class="blank">
+</div>
+  <div class="about-me js-scrollable-block indicated" id="js-about-me">
+    <h3>SOBRE MÍ...</h3>
+    <p>
+      Nací en Madrid hace 34 años, Ingeniera de obras públicas,
+      reinventándome como profesional del desarrollo y aplicando el ingenio en html, css, scss y javascript.
+    </p>
+    <p>Formulando la ecuación entre las ganas de aprender multiplicadas por la motivación.</p>
+    <p>Despejando las dudas a base trabajo en equipo y buena capacidad de comunicación.</p>
+    <p>Poniendo pasión y esmero en cada línea de código.</p>
+    </div>
+    <div id="skill" class="blank">
+</div>
+    <div class="skills js-scrollable-block" id="js-skill">
+      <h3>HABILIDADES</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div id="thank" class="blank">
+</div>
+      <div class="thanks js-scrollable-block" id="js-thank">
+        <h3>AGRADECIMIENTOS</h3>
+        <p>Agradecer a ADALAB la formación recibida en su curso de desarrollador Front-End,
+          donde he descubierto un mundo nuevo.
+        La dedicación y el empeño para que podamos disfrutar con esta profesión y descubriéndonos
+         todo un abanico de posibilidades por delante.</p>
+        </div>
+        <div id="contacts" class="blank">
+</div>
+        <div class="contact js-scrollable-block" id="js-contacts">
+          <h3>CONTACTO</h3>
+          <p>m.berlo8583@gmail.com</p>
+          <p>699.666.957</p>
+          </div>
+          <footer class="container-footer">
+                  <div class="container-icons">
+                     <a target="_blank" href="https://www.facebook.com/marta.bermejolorenzo"><img class="icons" src="images/facebook.png" alt="logo facebook"></a>
+                     <a target="_blank" href="https://github.com/martabl"><img class="icons" src="images/github.png" alt="logo github"></a>
+                     <a target="_blank" href="https://es.linkedin.com/https://twitter.com/"><img class="icons" src="images/linkedin.png" alt="logo linkedin"></a>
+                     <a target="_blank" href="https://twitter.com/mberlo2"><img class="icons" src="images/twitter.png" alt="logo twitter"></a>
+                  </div>
+              </footer>
+
+              <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+              <script type="text/javascript" src="js/main.js"></script>
+            </body>
+            </html>
