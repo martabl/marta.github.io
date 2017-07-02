@@ -42,13 +42,12 @@ function indicateBlock(elementId) {
 	$('.js-scrollable-block').not('#' + elementId).removeClass('indicated').addClass('nonIndicated');
 	$('#' + elementId).removeClass('nonIndicated').addClass('indicated');
 
-	console.log(elementId);
 }
 
 
 function isScrolledIntoView(elementId)
 {
-    var docViewTop = $(window).scrollTop() * 1.25;
+    var docViewTop = $(window).scrollTop() * 1.15;
     var docViewBottom = (docViewTop + $(window).height()) * 0.95;
 
     var elemTop = $('#' + elementId).offset().top;

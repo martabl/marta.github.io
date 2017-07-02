@@ -12,7 +12,8 @@ h1 {
   text-align: center;
   color: #F9F31E;
   margin: 0;
-  padding-top: 20px; }
+  padding-top: 20px;
+  font-size: 20px; }
 
 h3 {
   text-align: center;
@@ -26,6 +27,9 @@ p {
   margin-right: 30px;
   padding-bottom: 20px; }
 
+@media (min-width: 760px) {
+  h1 {
+    font-size: 40px; } }
 .navButton {
   width: 45px;
   height: 40px;
@@ -176,7 +180,8 @@ a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #4D4D4D;
-  padding: 5px 20px; }
+  padding: 5px 20px;
+  height: 103px; }
 
 .head-line-container-mobile {
   width: 100%; }
@@ -201,18 +206,6 @@ a:hover {
 
   .hide {
     display: none; } }
-.indicated {
-  -webkit-box-shadow: 0px 10px 35px 10px rgba(255, 255, 255, 0.52);
-          box-shadow: 0px 10px 35px 10px rgba(255, 255, 255, 0.52);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  z-index: 100; }
-
-.nonIndicated {
-  z-index: 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-
 .photo, .about-me, .skills, .thanks, .contact {
   position: relative;
   background-color: #7F7F7F;
@@ -230,9 +223,21 @@ a:hover {
 .blank {
   position: relative;
   height: 0;
-  bottom: 45px; }
+  bottom: 110px; }
 
 @media (min-width: 760px) {
+  .indicated {
+    -webkit-box-shadow: 0px 10px 35px 10px rgba(255, 255, 255, 0.52);
+            box-shadow: 0px 10px 35px 10px rgba(255, 255, 255, 0.52);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 100; }
+
+  .nonIndicated {
+    z-index: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+
   .about-me, .thanks, .skills, .contact {
     position: absolute;
     padding: 20px; }
@@ -245,20 +250,20 @@ a:hover {
 
   .photo {
     position: absolute;
-    top: 150px;
+    top: 187px;
     left: 0;
     width: 45%;
     z-index: 50;
     margin-top: 0; }
 
   .about-me {
-    top: 350px;
+    top: 275px;
     right: 0;
     width: 60%;
     z-index: 60; }
 
   .skills {
-    top: 600px;
+    top: 650px;
     left: 0; }
 
   .thanks {
@@ -270,7 +275,20 @@ a:hover {
   .contact {
     top: 1000px;
     left: 0;
-    width: 50%; } }
+    width: 50%; }
+
+  .blank-about, .blank-skill, .blank-thank, .blank-contacts {
+    position: absolute;
+    height: 0; }
+
+  .blank-about {
+    bottom: 210px; }
+
+  .blank-skill {
+    top: 550px; }
+
+  .blank-thank {
+    top: 600px; } }
 .container-footer {
   width: 100%;
   display: -webkit-box;
