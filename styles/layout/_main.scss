@@ -1,4 +1,4 @@
-.photo ,.about-me, .skills, .thanks, .contact{
+.photo ,.about-me, .skills, .projects, .contact{
   position: relative;
   background-color: $tertiary-color;
   width: 80%;
@@ -31,12 +31,12 @@
     z-index: 0;
     transition: all 0.3s ease;
   }
-.about-me, .thanks, .skills, .contact{
+.about-me, .projects, .skills, .contact{
   position: absolute;
   padding: 20px;
 }
 
-.about-me, .thanks{
+.about-me, .projects{
     background-color: $secondary-color;
   }
 .skills, .contact{
@@ -60,31 +60,31 @@
   top: 650px;
   left: 0;
 }
-.thanks{
-  top: 800px;
+.projects{
+  top: 850px;
   right: 0;
   width: 60%;
   z-index: 80;
 }
 .contact{
-  top: 1000px;
+  top: 1400px;
   left: 0;
   width: 50%;
 }
-.blank-about, .blank-skill, .blank-thank, .blank-contacts{
+.blank-about, .blank-skill, .blank-project, .blank-contacts{
   position: absolute;
   height: 0;
 }
 .blank-about{
-  bottom: 210px;
+  top: 210px;
 }
 .blank-skill{
   top: 550px;
 }
-.blank-thank{
+.blank-project{
   top: 600px;
 }
 .blank-contacts{
-  
+
 }
 }

@@ -27,8 +27,8 @@ function handleScroll() {
 function handleIndicatedBlock() {
   if (isScrolledIntoView('js-contacts')) {
   	indicateBlock('js-contacts')
-  } else if (isScrolledIntoView('js-thank')) {
-  	indicateBlock('js-thank')
+  } else if (isScrolledIntoView('js-project')) {
+  	indicateBlock('js-project')
   } else if (isScrolledIntoView('js-skill')) {
   	indicateBlock('js-skill')
   } else if(isScrolledIntoView('js-about-me')) {
