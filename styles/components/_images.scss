@@ -1,0 +1,17 @@
+.my-photo{
+  width: 100%;
+}
+.img-link{
+  margin-top: 10px;
+  width: 50%;
+  border-radius: 10%;
+  height: 75px;
+}
+
+
+@media (min-width: $min-size-mobile){
+.img-link{
+  height: 150px;
+}
+
+}

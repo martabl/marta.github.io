@@ -4,20 +4,21 @@
 
 body {
   width: 100%;
-  background-color: #4D4D4D;
+  background-color: #313033;
   margin: 0;
-  font-family: 'Bellefair', serif; }
+  font-family: 'Bellefair', serif;
+  color: #d0ccd9; }
 
 h1 {
   text-align: center;
-  color: #95ED8C;
+  color: #00bfbb;
   margin: 0;
   padding-top: 20px;
   font-size: 20px; }
 
 h3 {
   text-align: center;
-  color: #95ED8C;
+  color: #00bfbb;
   padding: 10px; }
 
 p {
@@ -47,7 +48,7 @@ p {
   position: absolute;
   height: 16.5%;
   width: 100%;
-  background: #95ED8C;
+  background: #00bfbb;
   border-radius: 16.5%;
   opacity: 1;
   left: 0;
@@ -96,7 +97,7 @@ p {
 
 .nav-small-item {
   padding: 5px;
-  border-bottom: 2px solid #95ED8C;
+  border-bottom: 2px solid #00bfbb;
   font-weight: bold; }
 
 .nav-small-item:last-child {
@@ -107,7 +108,7 @@ p {
   position: fixed;
   right: 0;
   top: 106px;
-  background-color: #4D4D4D;
+  background-color: #313033;
   z-index: -50;
   margin: 0;
   width: 100%;
@@ -136,7 +137,7 @@ p {
   width: 100%;
   text-decoration: none;
   font-size: 20px;
-  color: #95ED8C; }
+  color: #00bfbb; }
 
 a:hover {
   color: #E8FEE6; }
@@ -164,13 +165,75 @@ a:hover {
   .nav-small-item {
     padding: 10px 20px;
     border: 0; } }
+.my-photo {
+  width: 100%; }
+
+.img-link {
+  margin-top: 10px;
+  width: 50%;
+  border-radius: 10%;
+  height: 75px; }
+
+@media (min-width: 760px) {
+  .img-link {
+    height: 150px; } }
+.skillbar {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  background: #eee;
+  height: 35px;
+  border-radius: 3px;
+  -webkit-transition: 0.4s linear;
+  transition: 0.4s linear;
+  -webkit-transition-property: width, background-color;
+  transition-property: width, background-color; }
+
+.skillbar-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #ffffff;
+  background: #6adcfa;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+
+.skillbar-title span {
+  display: block;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+  height: 35px;
+  line-height: 35px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+
+.skillbar-bar {
+  height: 35px;
+  width: 0px;
+  background: #6adcfa;
+  border-radius: 3px; }
+
+.skill-bar-percent {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 11px;
+  height: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  color: rgba(0, 0, 0, 0.4); }
+
 .nav-content {
   position: fixed;
   top: 0;
   z-index: 200;
   width: 100%;
-  background-color: #4D4D4D;
-  border-bottom: 2px solid #95ED8C; }
+  background-color: #313033;
+  border-bottom: 2px solid #00bfbb; }
 
 .nav-mobile-container {
   display: -webkit-box;
@@ -179,7 +242,7 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #4D4D4D;
+  background-color: #313033;
   padding: 5px 20px;
   height: 103px; }
 
@@ -208,17 +271,14 @@ a:hover {
     display: none; } }
 .photo, .about-me, .skills, .projects, .contact {
   position: relative;
-  background-color: #7F7F7F;
+  background-color: #565459;
   width: 80%;
   margin-left: auto;
   margin-right: auto; }
 
 .photo {
-  background-color: #4D4D4D;
+  background-color: #313033;
   margin-top: 88px; }
-
-.my-photo {
-  width: 100%; }
 
 .blank {
   position: relative;
@@ -243,10 +303,10 @@ a:hover {
     padding: 20px; }
 
   .about-me, .projects {
-    background-color: #B0AFAF; }
+    background-color: #49484c; }
 
   .skills, .contact {
-    background-color: #7F7F7F; }
+    background-color: #565459; }
 
   .photo {
     position: absolute;
@@ -267,13 +327,13 @@ a:hover {
     left: 0; }
 
   .projects {
-    top: 850px;
+    top: 1100px;
     right: 0;
-    width: 60%;
+    width: 75%;
     z-index: 80; }
 
   .contact {
-    top: 1400px;
+    top: 2200px;
     left: 0;
     width: 50%; }
 
@@ -288,7 +348,10 @@ a:hover {
     top: 550px; }
 
   .blank-project {
-    top: 600px; } }
+    top: 1050px; }
+
+  .blank-contacts {
+    top: 2100px; } }
 .container-footer {
   width: 100%;
   display: -webkit-box;
@@ -307,6 +370,6 @@ a:hover {
 @media (min-width: 760px) {
   .container-footer {
     position: absolute;
-    top: 1700px; } }
+    top: 2475px; } }
 
 /*# sourceMappingURL=index.css.map */
