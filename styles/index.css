@@ -4,21 +4,21 @@
 
 body {
   width: 100%;
-  background-color: #638D95;
+  background-color: #193441;
   margin: 0;
   font-family: 'Bellefair', serif;
-  color: white; }
+  color: #fcfff5; }
 
 h1 {
   text-align: center;
-  color: black;
+  color: #fcfff5;
   margin: 0;
   padding-top: 20px;
   font-size: 20px; }
 
 h2 {
   text-align: center;
-  color: black;
+  color: #fcfff5;
   padding: 10px; }
 
 p {
@@ -49,7 +49,7 @@ p {
   position: absolute;
   height: 16.5%;
   width: 100%;
-  background: black;
+  background: #fcfff5;
   border-radius: 16.5%;
   opacity: 1;
   left: 0;
@@ -98,7 +98,7 @@ p {
 
 .nav-small-item {
   padding: 5px;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #91aa9d;
   font-weight: bold; }
 
 .nav-small-item:last-child {
@@ -109,7 +109,7 @@ p {
   position: fixed;
   right: 0;
   top: 106px;
-  background-color: #638D95;
+  background-color: #193441;
   z-index: -50;
   margin: 0;
   width: 100%;
@@ -138,7 +138,7 @@ p {
   width: 100%;
   text-decoration: none;
   font-size: 20px;
-  color: black; }
+  color: #fcfff5; }
 
 a:hover {
   color: #C8D9DC; }
@@ -171,8 +171,8 @@ a:hover {
 
 .img-link {
   margin-top: 10px;
-  width: 50%;
-  border-radius: 30px;
+  width: 100%;
+  border-radius: 90px;
   height: 75px; }
 
 .up-image {
@@ -180,7 +180,7 @@ a:hover {
 
 @media (min-width: 760px) {
   .img-link {
-    width: 30%;
+    width: 50%;
     height: 150px; } }
 .skillbar {
   position: relative;
@@ -236,8 +236,8 @@ a:hover {
   top: 0;
   z-index: 200;
   width: 100%;
-  background-color: #638D95;
-  border-bottom: 2px solid black; }
+  background-color: #193441;
+  border-bottom: 2px solid #91aa9d; }
 
 .nav-mobile-container {
   display: -webkit-box;
@@ -246,7 +246,7 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #638D95;
+  background-color: #193441;
   padding: 5px 20px;
   height: 103px; }
 
@@ -275,13 +275,16 @@ a:hover {
     display: none; } }
 .photo, .about-me, .skills, .projects, .contact {
   position: relative;
-  background-color: #245B65;
+  background-color: #3e606f;
   width: 80%;
   margin-left: auto;
   margin-right: auto; }
 
+.skills {
+  padding: 10px; }
+
 .photo {
-  background-color: #638D95;
+  background-color: #193441;
   margin-top: 88px; }
 
 .blank {
@@ -316,10 +319,10 @@ a:hover {
     padding: 20px; }
 
   .about-me, .projects {
-    background-color: #40737D; }
+    background-color: #3D5865; }
 
   .skills, .contact {
-    background-color: #245B65; }
+    background-color: #3e606f; }
 
   .photo {
     position: absolute;
