@@ -16,6 +16,15 @@
   height: 0;
   bottom: 110px;
 }
+.up-page {
+  width: 50px;
+  position: fixed;
+  display: none;
+  bottom: 20px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 101;
+}
 
 
 @media (min-width: $min-size-mobile){
@@ -65,7 +74,7 @@
   z-index: 80;
 }
 .contact{
-  top: 2200px;
+  top: 2300px;
   left: 0;
   width: 50%;
 }
@@ -74,15 +83,18 @@
   height: 0;
 }
 .blank-about{
-  top: 210px;
+  top: 190px;
 }
 .blank-skill{
   top: 550px;
 }
 .blank-project{
-  top: 1050px;
+  top: 1000px;
 }
 .blank-contacts{
-top: 2100px;
+top: 2225px;
+}
+.up-page {
+  width: 65px;
 }
 }

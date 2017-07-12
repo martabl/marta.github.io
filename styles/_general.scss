@@ -15,7 +15,7 @@ h1{
   padding-top: 20px;
   font-size: 20px;
 }
-h3{
+h2{
   text-align: center;
   color: $color-burguer-title;
   padding: 10px;
@@ -26,6 +26,7 @@ p{
   margin-left: 30px;
   margin-right: 30px;
   padding-bottom: 20px;
+  line-height: 25px;
 
 }
 @media (min-width: $min-size-mobile){

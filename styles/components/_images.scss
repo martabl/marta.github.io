@@ -4,13 +4,17 @@
 .img-link{
   margin-top: 10px;
   width: 50%;
-  border-radius: 10%;
+  border-radius: 30px;
   height: 75px;
+}
+.up-image {
+  width: 100%;
 }
 
 
 @media (min-width: $min-size-mobile){
 .img-link{
+  width: 30%;
   height: 150px;
 }
 

@@ -4,21 +4,21 @@
 
 body {
   width: 100%;
-  background-color: #313033;
+  background-color: #638D95;
   margin: 0;
   font-family: 'Bellefair', serif;
-  color: #d0ccd9; }
+  color: white; }
 
 h1 {
   text-align: center;
-  color: #00bfbb;
+  color: black;
   margin: 0;
   padding-top: 20px;
   font-size: 20px; }
 
-h3 {
+h2 {
   text-align: center;
-  color: #00bfbb;
+  color: black;
   padding: 10px; }
 
 p {
@@ -26,7 +26,8 @@ p {
   text-align: center;
   margin-left: 30px;
   margin-right: 30px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  line-height: 25px; }
 
 @media (min-width: 760px) {
   h1 {
@@ -48,7 +49,7 @@ p {
   position: absolute;
   height: 16.5%;
   width: 100%;
-  background: #00bfbb;
+  background: black;
   border-radius: 16.5%;
   opacity: 1;
   left: 0;
@@ -97,7 +98,7 @@ p {
 
 .nav-small-item {
   padding: 5px;
-  border-bottom: 2px solid #00bfbb;
+  border-bottom: 2px solid black;
   font-weight: bold; }
 
 .nav-small-item:last-child {
@@ -108,7 +109,7 @@ p {
   position: fixed;
   right: 0;
   top: 106px;
-  background-color: #313033;
+  background-color: #638D95;
   z-index: -50;
   margin: 0;
   width: 100%;
@@ -137,10 +138,10 @@ p {
   width: 100%;
   text-decoration: none;
   font-size: 20px;
-  color: #00bfbb; }
+  color: black; }
 
 a:hover {
-  color: #E8FEE6; }
+  color: #C8D9DC; }
 
 @media (min-width: 760px) {
   .nav-desktop {
@@ -171,11 +172,15 @@ a:hover {
 .img-link {
   margin-top: 10px;
   width: 50%;
-  border-radius: 10%;
+  border-radius: 30px;
   height: 75px; }
+
+.up-image {
+  width: 100%; }
 
 @media (min-width: 760px) {
   .img-link {
+    width: 30%;
     height: 150px; } }
 .skillbar {
   position: relative;
@@ -224,16 +229,15 @@ a:hover {
   font-size: 11px;
   height: 35px;
   line-height: 35px;
-  color: #ffffff;
-  color: rgba(0, 0, 0, 0.4); }
+  color: black; }
 
 .nav-content {
   position: fixed;
   top: 0;
   z-index: 200;
   width: 100%;
-  background-color: #313033;
-  border-bottom: 2px solid #00bfbb; }
+  background-color: #638D95;
+  border-bottom: 2px solid black; }
 
 .nav-mobile-container {
   display: -webkit-box;
@@ -242,7 +246,7 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #313033;
+  background-color: #638D95;
   padding: 5px 20px;
   height: 103px; }
 
@@ -271,19 +275,28 @@ a:hover {
     display: none; } }
 .photo, .about-me, .skills, .projects, .contact {
   position: relative;
-  background-color: #565459;
+  background-color: #245B65;
   width: 80%;
   margin-left: auto;
   margin-right: auto; }
 
 .photo {
-  background-color: #313033;
+  background-color: #638D95;
   margin-top: 88px; }
 
 .blank {
   position: relative;
   height: 0;
   bottom: 110px; }
+
+.up-page {
+  width: 50px;
+  position: fixed;
+  display: none;
+  bottom: 20px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 101; }
 
 @media (min-width: 760px) {
   .indicated {
@@ -303,10 +316,10 @@ a:hover {
     padding: 20px; }
 
   .about-me, .projects {
-    background-color: #49484c; }
+    background-color: #40737D; }
 
   .skills, .contact {
-    background-color: #565459; }
+    background-color: #245B65; }
 
   .photo {
     position: absolute;
@@ -333,7 +346,7 @@ a:hover {
     z-index: 80; }
 
   .contact {
-    top: 2200px;
+    top: 2300px;
     left: 0;
     width: 50%; }
 
@@ -342,16 +355,19 @@ a:hover {
     height: 0; }
 
   .blank-about {
-    top: 210px; }
+    top: 190px; }
 
   .blank-skill {
     top: 550px; }
 
   .blank-project {
-    top: 1050px; }
+    top: 1000px; }
 
   .blank-contacts {
-    top: 2100px; } }
+    top: 2225px; }
+
+  .up-page {
+    width: 65px; } }
 .container-footer {
   width: 100%;
   display: -webkit-box;
@@ -370,6 +386,6 @@ a:hover {
 @media (min-width: 760px) {
   .container-footer {
     position: absolute;
-    top: 2475px; } }
+    top: 2560px; } }
 
 /*# sourceMappingURL=index.css.map */
